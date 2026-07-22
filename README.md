@@ -4,7 +4,7 @@ A browser-based sketch pad built with vanilla HTML, CSS, and JavaScript as part 
 
 ## Live Demo
 
-[(https://b-chen8.github.io/etch-a-sketch/)]
+https://b-chen8.github.io/etch-a-sketch/
 
 ## Features
 
