@@ -15,8 +15,8 @@ A browser-based sketch pad built with vanilla HTML, CSS, and JavaScript as part 
 
 ### Extra Credit
 
-- [ ] Randomized RGB color per square on each interaction
-- [ ] Progressive darkening: each interaction darkens a square by 10%, reaching full color/black after ten passes
+- [x] Randomized RGB color per square on each interaction
+- [x] Progressive darkening: each interaction darkens a square by 10%, reaching full color/black after ten passes
 
 ## How It Works
 
@@ -43,4 +43,4 @@ open index.html
 
 ## Acknowledgments
 
-Project brief from [The Odin Project](https://www.theodinproject.com/).
+Project brief from [The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).

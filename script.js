@@ -4,8 +4,13 @@ for(let i = 0; i < 16; i++) {
         const newDiv = document.createElement('div');
         newDiv.classList.add("box");
         newDiv.addEventListener('mouseenter', () => {
-            newDiv.style.backgroundColor = 'red';
+            newDiv.style.backgroundColor = `rgb(${Math.floor(Math.random()* 256)}, ${Math.floor(Math.random()* 256)}, ${Math.floor(Math.random()* 256)})`;
             newDiv.style.opacity = 0.10;
+        }, { once: true });
+        newDiv.addEventListener('mouseenter', () => {
+            if(newDiv.style.opacity != 1) {
+                newDiv.style.opacity = parseFloat(newDiv.style.opacity || 1) + 0.1;
+            }
         });
         container.appendChild(newDiv);
     }
@@ -30,8 +35,13 @@ button.addEventListener("click", () => {
             newDiv.style.width = `${newDimen}px`;
             newDiv.style.borderWidth = `${Math.max(newDimen / 48, 0.5)}px`;
             newDiv.addEventListener('mouseenter', () => {
-                newDiv.style.backgroundColor = 'red';
+                newDiv.style.backgroundColor = `rgb(${Math.floor(Math.random()* 256)}, ${Math.floor(Math.random()* 256)}, ${Math.floor(Math.random()* 256)})`;
                 newDiv.style.opacity = 0.10;
+            },{ once: true });
+            newDiv.addEventListener('mouseenter', () => {
+                if(newDiv.style.opacity != 1) {
+                    newDiv.style.opacity = parseFloat(newDiv.style.opacity || 1) + 0.1;
+                }
             });
             container.appendChild(newDiv)
         }
